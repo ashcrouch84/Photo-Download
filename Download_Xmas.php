@@ -278,10 +278,6 @@ $(document).ready(function(){
 
 		<div id="divGroupedProducts">
 			<form action="" method="POST">
-				<label for="emailAddress">Email Address</label>
-				<div class="form-input-material">
-					<input style="width: 350px; type="text" name="email_entered" id="emailAddress" placeholder=" "  class="form-control-material" required="" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title = "Must be a valid email address" />
-				</div>
 				<label for="ref">Reference Number</label>
 				<div class="form-input-material">
 					<input style="width: 350px; type="text" name="search_entered" id="ref" placeholder=" "  class="form-control-material" required="" title="please enter number only" maxlength="8" minlength="5" />
@@ -293,18 +289,10 @@ $(document).ready(function(){
 			</form>
 		</div>
 		
-		<div id="left">
+		<div id="center">
 			<div id="divGroupedProducts">
 				<form action="https://4k-photos.co.uk/Forgot22.php"  >
 					<button type="submit" class="btn btn-primary btn-ghost">Forgot Booking Reference</button>
-				</form>
-			</div>
-			<br>
-		</div>
-		<div id="right">
-			<div id="divGroupedProducts">
-				<form action="https://4k-photos.co.uk/Login22.php"  >
-				<button type="submit" class="btn btn-primary btn-ghost">Login to Personalise Christmas</button>
 				</form>
 			</div>
 			<br>
@@ -339,12 +327,7 @@ $(document).ready(function(){
 <?php
 	$directory = "Lcyg1xRbij3xfckDV9HMlvG2vZHfhDbvoikgcXLb5Lnn7GQQcYpVGt63kDkLIkpA/";
 
-	if($emaillength < 5)
-	{
-		echo "No email entered";
-	}
-	else
-	{
+
 		if ($searchlength < 5 )
 		{
 			echo "Not enough digits entered for reference or barcode";
@@ -493,7 +476,7 @@ $(document).ready(function(){
 				}
 			}
 		}
-	}
+	
 ?>		
 
 
